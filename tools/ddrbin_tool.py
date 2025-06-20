@@ -1346,7 +1346,7 @@ def ddrbin_tool(argc, argv):
     verinfo_editable_offset = 0
     verinfo_editable_length = 17
 
-    print("version v1.24 20250610")
+    print("version v1.25 20250620")
     print("python {}, {}, {}".format(sys.version.split(' ', 1)[0], platform.system(), platform.machine()))
     if sys.version_info < (3, 6):
         print("Warning: Please installed Python 3.6 or later.")
@@ -1543,11 +1543,17 @@ def ddrbin_tool(argc, argv):
             write_in = copy.deepcopy(sdram_head_info_v6)
 
         #index_info read out
+        head_total_size = 2 * 4
+        first_index_offset = 0
         for key in ddrbin_index:
+            if first_index_offset != 0 and head_total_size >= first_index_offset:
+                break
+
             if '_u16' in key:
                 try:
                     ddrbin_index[key]['offset'] = int.from_bytes(filebin.read(2), byteorder='little')
                     ddrbin_index[key]['size'] = int.from_bytes(filebin.read(2), byteorder='little')
+                    head_total_size += 4
                 except:
                     filebin.close()
                     print("readout ddrbin_index perf_index fail")
@@ -1556,11 +1562,16 @@ def ddrbin_tool(argc, argv):
                 try:
                     ddrbin_index[key]['offset'] = int.from_bytes(filebin.read(1), byteorder='little')
                     ddrbin_index[key]['size'] = int.from_bytes(filebin.read(1), byteorder='little')
+                    head_total_size += 2
                 except:
                     filebin.close()
                     print("readout ddrbin_index fail")
                     return -1
-            #print(f"D: {key} = {ddrbin_index[key]}",ddrbin_index[key]["offset"],ddrbin_index[key]["size"])
+
+            if first_index_offset == 0 and ddrbin_index[key]['offset'] != 0:
+                first_index_offset = ddrbin_index[key]['offset'] * 4
+
+            #print(f"D: {head_total_size}, {first_index_offset}, {key} = {ddrbin_index[key]}")
     else:
         filebin.close()
         print("version not support")
