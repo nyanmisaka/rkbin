@@ -1,5 +1,24 @@
 # rv1126b Release Note
 
+## rv1126b{p}_ddr_{1332, 1056}MHz_v1.04.bin
+
+| Date       | File                                     | Build commit | Severity  |
+| ---------- | :--------------------------------------- | ------------ | --------- |
+| 2025-07-22 | rv1126b{p}_ddr_{1332, 1056}MHz_v1.04.bin | ff328eecdd   | important |
+
+### Fixed
+
+| Index | Severity  | Update                                    | Issue description                              | Issue source |
+| ----- | --------- | ----------------------------------------- | ---------------------------------------------- | ------------ |
+| 1     | important | Fix​​ per-channel 3Gb/4Gb LPDDR4(X) tRFCpb  | Per-channel 3Gb/4Gb LPDDR4(X) sleep failures   |              |
+| 2     | important | Modify​​ CS training mode                   | Initialization issues on some LPDDR4(X) boards |              |
+| 3     | important | Optimize​​ DDR3/DDR4 SI settings            |                                                |              |
+| 4     | important | Enable​​ RV1126B LPDDR4 DBI to enhance SIPI |                                                |              |
+| 5     | moderate  | Optimize​​ LPDDR4(X) vref settings          |                                                |              |
+| 6     | moderate  | Add​​ PHY pll_ls configuration              |                                                |              |
+
+------
+
 ## rv1126b_bl31_v1.08.elf
 
 | Date       | File                  | Build commit | Severity  |
