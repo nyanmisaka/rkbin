@@ -1,5 +1,18 @@
 # rv1126b Release Note
 
+## rv1126b_bl31_v1.08.elf
+
+| Date       | File                  | Build commit | Severity  |
+| ---------- | :-------------------- | ------------ | --------- |
+| 2025-07-17 | rv1126b_bl31_v1.08.elf | 2905dde0d | important |
+
+### New
+
+1. Always route fiq from s_el1  to el3.
+2. Improve accuracy of system timer after system suspend/resume for AOA.
+
+------
+
 ## rv1126b_bl31_v1.07.elf
 
 | Date       | File                  | Build commit | Severity  |
