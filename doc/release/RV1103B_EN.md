@@ -1,5 +1,17 @@
 # RV1103B Release Note
 
+## rv1103b_usbplug_spinand_cont_v1.10.bin
+
+| Date       | File                     | Build commit | Severity  |
+| ---------- | :----------------------- | ------------ | --------- |
+| 2025-07-28 | rv1103b_usbplug_spinand_cont_v1.10.bin | d86aef4ef0d3    | moderate |
+
+### New
+
+1. Support mxic and gigadevice spinand continues read mode.
+
+------
+
 ## rv1103b_tee_ta_v1.04.bin
 
 | Date       | File                     | Build commit | Severity  |

@@ -1,5 +1,17 @@
 # RV1103B Release Note
 
+## rv1103b_usbplug_spinand_cont_v1.10.bin
+
+| 时间       | 文件                     | 编译 commit | 重要程度 |
+| ---------- | :----------------------- | ----------- | -------- |
+| 2025-07-28 | rv1103b_usbplug_spinand_cont_v1.10.bin | d86aef4ef0d3   | 普通     |
+
+### New
+
+1. 增加 mxic 和 gigadevice continues read mode 支持。
+
+------
+
 ## rv1103b_tee_ta_v1.04.bin
 
 | 时间       | 文件                     | 编译 commit | 重要程度 |
