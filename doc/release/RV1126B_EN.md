@@ -1,5 +1,18 @@
 # rv1126b Release Note
 
+## rv1126b_bl32_v1.04.bin
+
+| Date       | File                   | Build commit | Severity  |
+| ---------- | :--------------------- | ------------ | --------- |
+| 2025-08-15 | rv1126b_bl32_v1.04.bin | a89319de7    | important |
+
+### New
+
+1. OTP supports Non-Protected OEM Zone functionality.
+2. Support CMAC KDF derived algorithms.
+
+------
+
 ## rv1126b{p}_ddr_{1332, 1056}MHz_v1.04.bin
 
 | Date       | File                                     | Build commit | Severity  |
