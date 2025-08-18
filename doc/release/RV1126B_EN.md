@@ -1,5 +1,20 @@
 # rv1126b Release Note
 
+## rv1126b{p}_ddr_{1332, 1056}MHz_v1.05.bin
+
+| Date       | File                                     | Build commit | Severity |
+| ---------- | :--------------------------------------- | ------------ | -------- |
+| 2025-08-18 | rv1126b{p}_ddr_{1332, 1056}MHz_v1.05.bin | c1d02225c7   | moderate |
+
+### Fixed
+
+| Index | Severity | Update                                  | Issue description             | Issue source |
+| ----- | -------- | --------------------------------------- | ----------------------------- | ------------ |
+| 1     | moderate | Optimize CA training PLL configuration  | Enhance CA training stability |              |
+| 2     | moderate | Optimize frequency information printing | -                             |              |
+
+------
+
 ## rv1126b_bl32_v1.04.bin
 
 | Date       | File                   | Build commit | Severity  |
