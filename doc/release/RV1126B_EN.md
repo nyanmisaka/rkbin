@@ -1,5 +1,17 @@
 # rv1126b Release Note
 
+## rv1126b_bl31_v1.09.elf
+
+| Date       | File                  | Build commit | Severity  |
+| ---------- | :-------------------- | ------------ | --------- |
+| 2025-08-25 | rv1126b_bl31_v1.09.elf | 5b828b3a5 | important |
+
+### New
+
+1. Support to use external 32k clock during system suspend.
+
+------
+
 ## rv1126b{p}_ddr_{1332, 1056}MHz_v1.05.bin
 
 | Date       | File                                     | Build commit | Severity |
